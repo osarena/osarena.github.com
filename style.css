@@ -26,7 +26,7 @@ br {line-height:10px;}
 #main img:hover {border-color:#D6D6D6;}
 
 #text_top {padding:0 30px 20px 30px; font-size:12px;}
-
+#text_middle {padding:0 30px 20px 30px; font-size:12px;}
 #text_bottom {background:url(images/main_bckg.jpg) repeat-x #919191; width:940px; float:left; padding:30px 30px;}
 
 #first_col {width:280px; float:left; margin-right:40px;}
