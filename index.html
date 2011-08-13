@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML>
 <!--
 Created by: Reality Software | www.realitysoftware.ca
 Released by: Flash Gallery | www.flash-gallery.org
@@ -34,20 +34,13 @@ You can also purchase a PSD-file for this template.
 
 
 <script>
- google.load("feeds", "1");
+google.load("feeds", "1");
 function OnLoad() {
-  // Create a feed control
   var feedControl = new google.feeds.FeedControl();
-
-  // Add two feeds.
   feedControl.addFeed("http://osarena.net/category/osarena-downloads/feed");
-  
-
-  // Draw it.
-  feedControl.draw(document.getElementById("feed"));
+  feedControl.draw(document.getElementById('feed'));
 }
-google.setOnLoadCallback(OnLoad);​
-
+google.setOnLoadCallback(OnLoad);
 </script>
 <!--END DIFF -->
 </head>
