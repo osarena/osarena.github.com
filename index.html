@@ -27,11 +27,35 @@ You can also purchase a PSD-file for this template.
   })();
 
 </script>
+
+<!--DIFF -->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+
+
+<script>
+ google.load("feeds", "1");
+function OnLoad() {
+  // Create a feed control
+  var feedControl = new google.feeds.FeedControl();
+
+  // Add two feeds.
+  feedControl.addFeed("http://osarena.net/category/osarena-downloads/feed");
+  
+
+  // Draw it.
+  feedControl.draw(document.getElementById("feed"));
+}
+google.setOnLoadCallback(OnLoad);​
+
+</script>
+<!--END DIFF -->
 </head>
 
 <body>
 <div id="container">
 <!-- header -->
+
 <div id="logo"><a href="index.html">OSarena Apps</a></div>
 <div id="menu">
     <ul>
@@ -60,8 +84,11 @@ To <b>OSarena.net Apps</b> αποτελεί το κεντρικό αποθετή
 <h2>Τι είναι Αποθετήριο;</h2>
 Φανταστείτε το αποθετήριο ως μια διαδικτυακή αποθήκη λογισμικού, εργαλείων, κειμένων και άλλων τύπων δεδομένων από την οποία κατεβάζετε όλα τα δεδομένα που σας ενδιαφέρουν
 . Αυτή τη στιγμή είναι διαθέσιμες 4 αποθήκες λογισμικού ανάλογα με τις προτιμήσεις σας. Μπορείτε να χρησιμοποιείσετε όσες και όποιες θέλετε. <a href="repos.html">Διαβάστε περισσότερα >></a>
+<!--DIFF -->
+<h2 style="color:#A71ED7">Νέα στο Αποθετήριο</h2>
+<div id="feed"></div>
 </div>
-
+<!-- END DIFF -->
 <div id="second_col">
 <h2>Πώς χρησιμοποιώ το αποθετήριο;</h2>
 Για να χρησιμοποιείσετε το αποθετήριο απλά κάνετε κλικ επάνω στην εικόνα που σας ενδιαφέρει και ακολουθήστε τις οδηγίες.
